@@ -43,7 +43,7 @@
         <!-- Intro 头部显示 e -->
         <!-- Header 头部logo start -->
         <header id="header">
-    <a href="https://github.com/emtd" class="logo" target="_blank">EMTD</a>
+    <a href="https://github.com/emtd" class="logo" target="_blank">open on Github</a>
 </header>
         <!-- Nav 导航条 start -->
         <nav id="nav" class="special" >
@@ -77,7 +77,7 @@
             <!-- icons 图标   -->
 			<ul class="icons">
 		            
-		                <li><a href="https://github.com/miccall" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		                <li><a href="https://github.com/emtd" class="icon fa-github"><span class="label">GitHub</span></a></li>
 		            
 		            
 		            
@@ -87,19 +87,24 @@
 
         <div id="main" >
             <div class ="post_page_title_img" style="height: 25rem;background-image: url(/images/me.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Hello World</h2></a>
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Share Screen</h2></a>
             </div>
             <!-- Post -->
             <div class="post-content" >
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+                <h1 id="SS-Share-Screen"><a href="#SS-Share-Screen" class="headerlink" title="SS(Share Screen)"></a>SS(Share Screen)</h1><h4 id="基于ADB开发-沿用STF项目的minicap和minitouch工具-实现Android手机屏幕共享及远程控制的一款chrome-app"><a href="#基于ADB开发-沿用STF项目的minicap和minitouch工具-实现Android手机屏幕共享及远程控制的一款chrome-app" class="headerlink" title="基于ADB开发,沿用STF项目的minicap和minitouch工具,实现Android手机屏幕共享及远程控制的一款chrome app."></a>基于ADB开发,沿用STF项目的minicap和minitouch工具,实现Android手机屏幕共享及远程控制的一款chrome app.</h4><h3 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h3><ul>
+<li>下载并安装此应用到chrome的扩展程序中</li>
+<li>启动adb,打开命令行输入<br> <code>$ adb start-server</code></li>
+<li>Android手机开启开发者选项，用数据线连接Android手机和PC</li>
+<li>手机弹出是否允许USB调试,选择确定</li>
+<li>打开应用,点击“Find devices”按钮,选择已连接的设备</li>
+<li>此时应用的列表里会出现已选择的Android手机,等待几秒钟,按钮从“preparing”变成“view”即可正常使用</li>
+<li>点击“view”弹出窗口,就实现手机屏幕共享到PC啦</li>
+</ul>
+<h3 id="需要的环境或工具"><a href="#需要的环境或工具" class="headerlink" title="需要的环境或工具"></a>需要的环境或工具</h3><ul>
+<li>chrome浏览器(最好更新到新版)</li>
+<li>安装ADB</li>
+</ul>
+<h3 id="tips"><a href="#tips" class="headerlink" title="tips"></a>tips</h3><p>此应用可以用于同时共享多个Android手机屏幕,只需要第一个设备启动正常的情况下,用数据连接其余设备即可.</p>
 
              </div>
 
@@ -162,8 +167,8 @@ $('.btn_click_load').click(function() {
 -->
 <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://yoursite.com/2017/05/31/hello-world/';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'http://yoursite.com/2017/05/31/hello-world/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = 'https://emtd.github.io/2017/06/02/Share Screen/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://emtd.github.io/2017/06/02/Share Screen/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 </script>
 
